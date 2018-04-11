@@ -11,7 +11,7 @@ First of let me tell you the specifications of my system-
 
 CPU   - Intel® Core™ i5-8250U CPU @ 1.60GHz × 8 
 
-GPU #1- Intel UHD Graphics 620 (GT2)
+GPU #1- Intel® UHD Graphics 620 
 
 GPU #2- Nvidia GeForce MX150 
 
@@ -146,7 +146,7 @@ direct rendering: Yes
 apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 ```
 **Step 10:** Now that our system should be ready to go, we need to verify the drivers have been loaded correctly. We can quickly verify this by running the [nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface) tool.
-```bash 
+```
 root@europa:~# nvidia-smi
 Wed Apr 11 11:08:55 2018       
 +-----------------------------------------------------------------------------+
@@ -227,3 +227,12 @@ rm -rf /usr/share/gdm/greeter/autostart/optimus.desktop
 rm -rf /etc/xdg/autostart/optimus.desktop
 ```
 Now reboot. You should be able get back to your old system. 
+
+
+
+
+If any issues exist please post it in [Kali's form](https://forums.kali.org/showthread.php?35748-TUTORIAL-Installing-official-NVIDIA-driver-in-Optimus-laptop).
+
+**My sincere thanks to [Tiger11](https://forums.kali.org/member.php?53670-TiGER511)** who did all the hard-work.
+
+**I'll soon update this repo on how to switch between your Intel Graphics and Nvidia Graphic card.**
