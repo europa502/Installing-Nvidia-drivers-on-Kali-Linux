@@ -1,13 +1,13 @@
 # Installing-Nvidia-drivers-on-Kali-Linux
 
 
-After spending few days on how-tos and debugging the black screen on boot after insalling the nvidia drivers, I was finally able to find a solution to all my problems.
-The main reason I'm writing this post is to let you know that the tutorial fond on [Kali's official website](https://docs.kali.org/general-use/install-nvidia-drivers-on-kali-linux) is broken as of date 11 April 2018.
-According to he menioned in heir website yo might be able to successfully install the packages - ocl-icd-libopencl1, nvidia-driver, nvidia-cuda-toolkit
-but you might encounter issues during the reboot. You might get a black screen and you won be able o login via he GUI.
+After spending few days on how-tos and debugging the black screen issue on boot after insalling the nvidia drivers, I was finally able to find a solution to all my problems.
+The main reason I'm writing this post is to let you know that the tutorial found on [Kali's official website](https://docs.kali.org/general-use/install-nvidia-drivers-on-kali-linux) is broken as of date 11 April 2018.
+According to he mentioned in their website you might be able to successfully install the packages - ocl-icd-libopencl1, nvidia-driver, nvidia-cuda-toolkit
+but you might encounter issues during the reboot. You might get a black screen and you won't be able to login via the GUI.
 
 ## So lets get started-
-First of let me tell you the specifications of my system-
+First of all let me tell you the specifications of my system-
 
 CPU   - Intel® Core™ i5-8250U CPU @ 1.60GHz × 8 
 
@@ -38,7 +38,7 @@ SUPPORT_URL="http://forums.kali.org/"
 BUG_REPORT_URL="http://bugs.kali.org/"
 ```
 
-Before we begin,couple of notes:
+Before we begin, a couple of notes:
 
 ***USE AT YOUR OWN RISK***
 
@@ -133,7 +133,7 @@ Exec=sh -c "xrandr --setprovideroutputsource modesetting NVIDIA-0; xrandr --auto
 NoDisplay=true
 X-GNOME-Autostart-Phase=DisplayServer
 ```
-**Step 8:** Now reboot and you should be using Nvidia Driver.Verify if everything is ok:
+**Step 8:** Now reboot and you should be using Nvidia Driver. Verify if everything is ok:
 install mesa-utils if not previously installed.
 ```bash
 apt-get install mesa-utils
@@ -172,7 +172,7 @@ Wed Apr 11 11:08:55 2018
 ```
 
 ***FIXING SCREEN TEARING ISSUE:***
-After you successfully boot up with Nvidia Driver, you most probably experiencing screen tearing issue eg: playing videos in VLC, Youtube videos on Chrome/Firefox etc.Luckily,we can fix this by enabling PRIME Sync.
+After you successfully boot up with Nvidia Driver, you most probably would be experiencing screen tearing issue eg: glitches while playing videos in VLC, Youtube videos on Chrome/Firefox etc. Luckily, we can fix this by enabling PRIME Sync.
 
 **1.** Verify if PRIME is disabled
 ```bash
@@ -210,7 +210,7 @@ PRIME Synchronization: 1
 PRIME Synchronization: 1
 ```
 
-If it still shows 0 for you,then there is probably something wrong with your system config/kernel.Since this is still an experimental feature from Nvidia,you are out of luck.
+If it still shows 0 for you,then there is probably something wrong with your system config/kernel. Since this is still an experimental feature from Nvidia,you are out of luck.
 
 ***IF YOU STUCK IN BOOT SCREEN***
 
