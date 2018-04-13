@@ -4,7 +4,7 @@
 After spending few days on how-tos and debugging the black screen issue on boot after insalling the nvidia drivers, I was finally able to find a solution to all my problems.
 The main reason I'm writing this post is to let you know that the tutorial found on [Kali's official website](https://docs.kali.org/general-use/install-nvidia-drivers-on-kali-linux) is broken as of date 11 April 2018.
 According to he mentioned in their website you might be able to successfully install the packages - ocl-icd-libopencl1, nvidia-driver, nvidia-cuda-toolkit
-but you might encounter issues during the reboot. You might get a black screen and you won't be able to login via the GUI.
+but you might encounter issues during the reboot. You might get a black screen and won't be able to login via the GUI.
 
 ## So lets get started-
 First of all let me tell you the specifications of my system-
