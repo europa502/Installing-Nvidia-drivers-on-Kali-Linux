@@ -233,6 +233,6 @@ Now reboot. You should be able get back to your old system.
 
 If any issues exist please post it in [Kali's form](https://forums.kali.org/showthread.php?35748-TUTORIAL-Installing-official-NVIDIA-driver-in-Optimus-laptop).
 
-**My sincere thanks to [Tiger11](https://forums.kali.org/member.php?53670-TiGER511)** who did all the hard-work.
+**My sincere thanks to [TiGER511](https://forums.kali.org/member.php?53670-TiGER511)** who did all the hard-work.
 
 **I'll soon update this repo on how to switch between your Intel Graphics and Nvidia Graphic card.**
