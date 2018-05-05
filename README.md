@@ -69,7 +69,7 @@ If shows nothing,means nouveau successfully disabled.
 
 **Step 4:** Install nvidia driver from kali repo:
 ```shell
-apt-get install  nvidia-driver nvidia-xconfig
+apt-get install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
 ```
 You can also download latest .run file from [Nvidia's website](http://www.nvidia.com/Download/index.aspx). Execute and procceed with installation. Whether its from Kali's repo or Nvidia's website, procedure is same.
 Code to install the .run file:
