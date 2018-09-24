@@ -138,9 +138,10 @@ install mesa-utils if not previously installed.
 ```bash
 apt-get install mesa-utils
 ```
+```bash
 root@europa:~# glxinfo | grep -i "direct rendering"
 direct rendering: Yes
-
+```
 **Step 9:** Now you can install the cuda toolkits and drivers 
 ```bash 
 apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
@@ -231,7 +232,7 @@ Now reboot. You should be able get back to your old system.
 
 
 
-If any issues exist please post it in [Kali's form](https://forums.kali.org/showthread.php?35748-TUTORIAL-Installing-official-NVIDIA-driver-in-Optimus-laptop).
+If any issues exist please post it in [Kali's forum](https://forums.kali.org/showthread.php?35748-TUTORIAL-Installing-official-NVIDIA-driver-in-Optimus-laptop).
 
 **My sincere thanks to [TiGER511](https://forums.kali.org/member.php?53670-TiGER511)** who did all the hard-work.
 
