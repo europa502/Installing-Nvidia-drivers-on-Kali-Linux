@@ -142,9 +142,9 @@ apt-get install mesa-utils
 root@europa:~# glxinfo | grep -i "direct rendering"
 direct rendering: Yes
 ```
-**Step 9:** Now you can install the cuda toolkits and drivers 
+**Step 9:** Now you can install the cuda toolkits and drivers. The package nvidia-cuda-toolkit has been deprecated. You can install hashcat-nvidia package as an alternative.
 ```bash 
-apt install -y ocl-icd-libopencl1 nvidia-driver nvidia-cuda-toolkit
+apt install -y ocl-icd-libopencl1 nvidia-driver hashcat-nvidia
 ```
 **Step 10:** Now that our system should be ready to go, we need to verify the drivers have been loaded correctly. We can quickly verify this by running the [nvidia-smi](https://developer.nvidia.com/nvidia-system-management-interface) tool.
 ```
